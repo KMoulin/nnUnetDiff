@@ -1,9 +1,9 @@
 # nnUnetDiff
 
-Trained network for the automatic LV segmentation of cardiac diffusion image. Input of the network is a simple DWI or nDWI image, the ouput is a mask/segmentation of the LV
-This package countain the trained weights of the nnUnet and a matlab and a python code to run the network as well as a set of dataset example.  
+Trained network for the automatic LV segmentation of cardiac diffusion image. Input of the network is a simple DWI or nDWI image, the ouput is a mask/segmentation of the LV.
+This package countain the trained weights of the nnUnet, a matlab and a python code to run the network as well as a set of dataset example.  
 
-This has been tested only on a Windows 10 & 11 system. 
+This has been tested only on Windows 10 & 11 systems. 
 
 ## Installation 
 - Install Python 3.12+
