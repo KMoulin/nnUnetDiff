@@ -13,7 +13,7 @@ This has been tested only on Windows 10 & 11 systems.
   - pip install nnunetv2
 
 # Copying the model
-Download the trained model from the Release: https://github.com/KMoulin/nnUnetDiff/releases/download/V1/Models.zip
+Download the trained model from the Release: https://github.com/KMoulin/nnUnetDiff/releases/download/v1.0.0.0/Models.zip
 Unzip the folder but make sure to keep the subfolder structure "\Results\Dataset007_All\nnUNetTrainer__nnUNetPlans__2d" which is recognized by nnUnet
 
 # Running nnUnet
