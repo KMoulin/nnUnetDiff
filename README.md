@@ -40,12 +40,15 @@ nnUNetv2_predict -i "' folderIn '" -o "' folderOut '" -c 2d -d 7 -f all -p nnUNe
 - _-p nnUnetPlans_ is the type of network
 - _-device cpu_ indicates the network will use the cpu only for prediction. If you have CUDA installed you may use the gpu for faster prediction. 
 
-## Matlab 
+ROI_NNUNET_KM.m/.py containt a function to call nnUnet and run the model on a multi-slice set of images. 
+The input is a matrix [X,Y slice] containting your images, the inplane resolution in mm (for instance [2.3, 2.3] mm) and a temporary folder to copy the data to nnUnet. 
 
-The file "Example_test_segmentation_cDWI.m" show an example of segmentation for Matlab. The function calling segmentation routine is located in the file "ROI_NNUNET_KM.m" 
+### Matlab 
+
+The file "Example_test_segmentation_cDWI.m" show an example of segmentation for Matlab. The function calling the segmentation routine is located in the file "ROI_NNUNET_KM.m" 
 No external depencies are needed
 
-# Python
+### Python
 
-The file "Example_test_segmentation_cDWI.py" show an example of segmentation for Matlab. The function calling segmentation routine is located in the file "ROI_NNUNET_KM.py"
+The file "Example_test_segmentation_cDWI.py" show an example of segmentation for Matlab. The function calling the segmentation routine is located in the file "ROI_NNUNET_KM.py"
 The Open CV package is needed into the ROI_NNUNET_KM routine: pip install opencv-python
