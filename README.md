@@ -5,18 +5,18 @@ This package countain the trained weights of the nnUnet, a matlab and a python c
 
 This has been tested only on Windows 10 & 11 systems. 
 
-## Installation 
+# Installation 
 - Install Python 3.12+
 - Install Pytorch with CUDA or with CPU
   - https://pytorch.org/get-started/locally/
 - Install nnUnet v2 :
   - pip install nnunetv2
 
-# Copying the model
+## Copying the model
 Download the trained model from the Release: https://github.com/KMoulin/nnUnetDiff/releases/download/v1.0.0.0/Models.zip
 Unzip the folder but make sure to keep the subfolder structure "\Results\Dataset007_All\nnUNetTrainer__nnUNetPlans__2d" which is recognized by nnUnet
 
-# Running nnUnet
+## Running nnUnet
 
 The nnUnet approach use 3 folders for training, testing and running. These folder path should be added as environement variable as described here:
 https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/set_environment_variables.md
@@ -40,7 +40,7 @@ nnUNetv2_predict -i "' folderIn '" -o "' folderOut '" -c 2d -d 7 -f all -p nnUNe
 - _-p nnUnetPlans_ is the type of network
 - _-device cpu_ indicates the network will use the cpu only for prediction. If you have CUDA installed you may use the gpu for faster prediction. 
 
-# Matlab 
+## Matlab 
 
 The file "Example_test_segmentation_cDWI.m" show an example of segmentation for Matlab. The function calling segmentation routine is located in the file "ROI_NNUNET_KM.m" 
 No external depencies are needed
