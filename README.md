@@ -24,9 +24,10 @@ https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/set_environment_var
 If you are only planning on using the network for making prediction/segmentation, you need only the Result containing the trainend model added to your environement variables.
 For simplicity, these two environement variable are added to the path within the ROI_nnUnet Matlab and Python example codes. 
 Some Python path are also needed to run nnUnet wich are also added in the example codes.
-[!IMPORTANT]
-Please adjust these path in the ROI_NNUNET_KM.m/.py for your system file before running them!
-Use the path where you copied the trained model!
+
+>[!IMPORTANT]
+>Please adjust these path in the ROI_NNUNET_KM.m/.py for your system file before running them!
+>Use the path where you copied the trained model!
 
 The main system command to call the nnUnet is as follow:
 nnUNetv2_predict -i "' folderIn '" -o "' folderOut '" -c 2d -d 7 -f all -p nnUNetPlans -device cpu
