@@ -15,10 +15,10 @@
 %                   default C:\Temp
 %        
 % OUTPUTS:  P_Endo - List of Coordinates of the Endocardium ROI
-%                 [200pts [y x]]
+%                 [200pts [y x] slices]
 %
 %           P_Epi - List of Coordinates of the Epicardium ROI
-%                 [200pts [y x]]
+%                 [200pts [y x] slices]
 %
 %           LV_Mask - Mask matrix 
 %                 [y x slices]
@@ -45,7 +45,7 @@ import json
 import cv2
 import scipy 
 from scipy.interpolate import griddata
-from matplotlib import pyplot as plt
+
 
 
 def ROI_NNUNET_KM(Dcm, Res=[2, 2],Folder_tmp="C:\\Temp"):
@@ -75,7 +75,7 @@ def ROI_NNUNET_KM(Dcm, Res=[2, 2],Folder_tmp="C:\\Temp"):
     sys.path.append(    os.path.join(pyRoot, 'bin'))
 
     # set Path to the nnUnet folders
-    os.environ["nnUNet_results"] = "D:\\nnUnet\\Results"
+    os.environ["nnUNet_results"] = "C:\\Users\\kevin\\Downloads\\nnUnet\\Models\\Results"
     #os.environ["nnUNet_preprocessed"] = "D:\\nnUnet\\PrePro" # not needed here
     #os.environ["nnUNet_raw"] = "D:\\nnUnet\\RAW" # not needed here
     #os.environ["nnUNet_results"],'D:\\nnUnet\\Results')

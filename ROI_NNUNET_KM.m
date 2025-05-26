@@ -1,7 +1,7 @@
 function [P_Endo,P_Epi,LV_Mask,Mask_Depth]= ROI_NNUNET_KM(Dcm,Res,Folder_tmp)
 %  nnUnet segmentation of the LV, with Endo and Epi segmentation and depth mask  
 %  
-% SYNTAX:  [P_Endo,P_Epi,LV_mask_slc]= ROI_NNUNET_KM(Dcm,)
+% SYNTAX:  [P_Endo,P_Epi,LV_mask_slc]= ROI_NNUNET_KM(Dcm,Res,Folder_tmp)
 %  
 %
 % INPUTS:   Dcm - Image matrix
@@ -14,10 +14,10 @@ function [P_Endo,P_Epi,LV_Mask,Mask_Depth]= ROI_NNUNET_KM(Dcm,Res,Folder_tmp)
 %                   default C:\Temp
 %        
 % OUTPUTS:  P_Endo - List of Coordinates of the Endocardium ROI
-%                 [200pts [y x]]
+%                 [200pts [y x] slices]
 %
 %           P_Epi - List of Coordinates of the Epicardium ROI
-%                 [200pts [y x]]
+%                 [200pts [y x] slices]
 %
 %           LV_Mask - Mask matrix 
 %                 [y x slices]
