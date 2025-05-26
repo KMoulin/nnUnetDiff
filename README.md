@@ -38,7 +38,7 @@ nnUNetv2_predict -i "' folderIn '" -o "' folderOut '" -c 2d -d 7 -f all -p nnUNe
 - _-d 7_ is the ID number of the trained network, in this repository the diffusion segmentation network has the ID 7. 
 - _-f all_ indicates we are using the network trained with all fold. 
 - _-p nnUnetPlans_ is the type of network
-- _-device cpu_ indicates the network will use the cpu only for prediction. If you have CUDA install you may use the gpu for faster prediction. 
+- _-device cpu_ indicates the network will use the cpu only for prediction. If you have CUDA installed you may use the gpu for faster prediction. 
 
 # Matlab 
 
